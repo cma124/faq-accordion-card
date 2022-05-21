@@ -100,7 +100,7 @@ summary {
 
 .card-text details[open] {
     margin-top: 1.5em;
-    height: 7em;
+    height: 8em;
 }
 
 .card-text summary {
@@ -117,7 +117,7 @@ summary {
 
 .card-text summary::after {
     content: '';
-    width: 50px;
+    width: 10px;
     height: 100%;
     background-image: url('./images/icon-arrow-down.svg');
     background-repeat: no-repeat;
@@ -147,6 +147,9 @@ details p {
 @media (min-width: 450px) {
     body {
         font-size: 1.5rem;
+    }
+    .card-text summary::after {
+        width: 50px;
     }
 }
 
